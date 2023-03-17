@@ -22,7 +22,7 @@ sigma0<-rbind(
 #多次元正規分布乱数の発生
 out<-as.data.frame(mvrnorm(1000,mu0,sigma0)) 
 
-colnames(out)<-c('english','mathmatic')
+colnames(out)<-c('english','mathmatics')
 
 out%>%filter(english+mathmatic>260)->passDf
 
